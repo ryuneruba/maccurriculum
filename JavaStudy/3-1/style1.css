@@ -1,0 +1,119 @@
+body {
+    min-height: 100%; 
+    height: 100%;
+}
+.clearfix::after { 
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+.wrapper {
+    width: 400px;
+    margin: 0 auto; 
+/* wrapperクラスを中央寄せ */
+}
+/** header **/
+.header { 
+    height: 100px;
+    width: 400px;
+    background-color: #141f40;
+}
+/** end of header **//** contents **/
+.contents { 
+    height: 64      。0px;
+}
+
+/** left **/
+.left { 
+    float: left;
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+}
+
+/** right **/
+.right {
+    float: right; 
+    width: 250px; 
+    height: 250px;
+    background-color: #8c2727;
+}
+
+
+
+/** footer **/
+.footer {
+    height: 100px;
+    width: 400px;
+    background-color: #d98d30;
+}
+
+
+
+
+
+
+
+/*ウィンドウ幅が最大767pxまでの場合に適用(タブレット用)*/
+@media screen and (max-width: 767px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
+/*ウィンドウ幅が最大479pxまでの場合に適用(スマホ用)*/
+@media screen and (max-width: 479px) {
+
+    .header {
+        height: 300px;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+}
+
+/*ウィンドウ幅が最大479pxまでの場合に適用(タブレット用)*/
+@media screen and (max-width: 479px) {
+
+    .wrapper {
+        width: 400px;
+    }
+
+    .left {
+        width: 200px;
+        height: 500px;
+    }
+
+    .left-upper {
+        width: 90px;
+        height: 60px;
+    }
+
+    .left-lower {
+        width: 90px;
+        height: 320px;
+    }
+
+    .center {
+        float: none; /* 要素の浮動化の解除 */
+        width: 200px;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    .right-inner {
+        width: 110px;
+    }
+
+    .right-inner-text {
+        font-size: 5px;
+        padding: 10px;
+        background-color: orange;
+        border: 5px solid red;
+    }
+
+}
