@@ -83,7 +83,7 @@
 
 /** left **/
     .left { 
-        float: clear;
+        float: none;
         height: 100px;
         width: 150px;
     background-color: #80bfa8;
@@ -91,7 +91,7 @@
 
 /** right **/
     .right { 
-        float: clear;
+        float: none;
         height: 100px;
         width: 150px; 
     background-color: #8c2727;
