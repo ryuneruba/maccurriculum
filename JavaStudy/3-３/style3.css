@@ -1,4 +1,6 @@
     body {
+        margin:0;
+        padding:0;
         min-height: 100%; 
         height: 100%;
     }
@@ -28,7 +30,7 @@
         float: left;
         width: 250px;
         height: 250px;
-        background-color: #dbd400;
+        background-color: #8c2727;
     }
     
     /** footer **/
@@ -39,37 +41,54 @@
         background-color: #d98d30;
     }
     
+    #borderbox p{
+        box-sizing: border-box;
+        width: 160px;
+        height: 60px;
+        background:white;
+        position: absolute;
+        left: 200px;
+        top :0;
+    }
+
     #borderbox1 p{
         box-sizing: border-box;
-        width: 60px;
-        height: 60px;
-        border: solid 10px white;
+        width: 40px;
+        height: 40px;
         background:#a9004b;
+        left: 215px;
+        top : -15px;
         position: relative;
-        top: -20px;
-        left: 180px;
     }
     #borderbox2 p{
         box-sizing: border-box;
-        width: 60px;
-        height: 60px;
-        border: solid 10px white;
+        width: 40px;
+        height: 40px;
         background:#a9004b;
+        left: 260px;
+        top : -71px;
         position: relative;
-        top: -96px;
-        left: 230px;
     }
     #borderbox3 p{
         box-sizing: border-box;
-        width: 60px;
-        height: 60px;
-        border: solid 10px white;
+        width: 40px;
+        height: 40px;
         background:#a9004b;
+        left: 305px;
+        top : -127px;
         position: relative;
-        top: -172px;
-        left: 280px;
     }
 
+    #borderbox4 p{
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        background:#ff863f;
+        position: absolute;
+        left : 190px;
+        top :140px;
+
+    }    
 
 /*ウィンドウ幅が最大479pxまでの場合に適用(スマホ用)*/
 @media screen and (max-width: 479px) {
