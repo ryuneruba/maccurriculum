@@ -1,40 +1,70 @@
+import java.lang.management.ThreadInfo;
+
 /**
- * Task1-3 : 課題内容
+ * Task1-4: 課題内容
  *
- * 本課題では、演算子の使い方を学んでいきましょう。
- * 問①から問⑦まであります。
- * 指定された数値、式、変数名を守って記述してください。
- *
- * 問③,⑤については、コメントを入れてください。
- * 問⑦については、変数名を使って出力してください。
+ * ログイン機能をイメージして処理を書いてみましょう！
+ * ・アカウント情報としてデータベースに登録されている情報
+ * 　名前：alice
+ * 　パスワード：alice123
+ * 本課題では、すべての定数(合計６種類)を使いつつ、if文の使い方に慣れていきましょう！
+ * 問① 〜 問⑤まで回答お願いします！
  *
  */
-public class Task1_3 {
+public class Task1_4 {
+
+    // 定数（アカウント情報）
+    // ① 登録されている名前（USER_NAME）とパスワード（USER_PASSWORD）を定数で定義してください。
+    private static final String USER_NAME = "alice";
+    private static final String USER_PASSWORD = "alice123";
+
+    // 定数（メッセージ）
+    private static final String CONST_MSG_SUCCESS = "ログイン成功です。";
+    private static final String CONST_MSG_ERROR_NAME = "名前に誤りがあります。";
+    private static final String CONST_MSG_ERROR_PASS = "パスワードに誤りがあります。";
+    private static final String CONST_MSG_ERROR_INPUT = "入力情報に誤りがあります。";
+
+    // 補足:
+    //   定数は②〜⑤で使い回すために定義しておきます。
+    //   final修飾子を付与すると、変数（動的に変わる値）ではなく、定数（変更不可な定まった値）となります。
+    //   「ここへ記述」部分へ適当な値を記述しましょう。
+    //   ※詳しくはJava2章にて紹介します。
 
     public static void main(String[] args) {
+        // 以下の変数「name」「pass」を使用して、②〜⑤の条件を満たす処理を記述してください。
+        // nameとpassはログイン画面からの入力値だと想定してみましょう。
 
-        // ① 5 と 10 を加算した値を代入する、変数 plus を作成しなさい。
-        int plus = 5+10;
-        // ② 20 から 7 を減算した値を代入する、変数 minus を作成しなさい。
-        int minus = 20-7;
-        // ③下記の処理について、何をしているのかコメントを記入してください。
-        // [int型のmultiplyを作成して、10x２の結果20を代入している]
-        int multiply = 10 * 2;
 
-        // ④ 20 を 6 で割った余りを代入する、変数 remi を作成しなさい。
-        int remi = 20%6;
-        // ⑤下記の処理について、何をしているのかコメントを記入してください
-        // [String townとlineを作成して、それぞれに有楽町と線を代入]
-        String town = "有楽町";
-        String line = "線";
+         String name = "alice";
+         String pass = "alice123";
 
-        // ⑥ ⑤で作成した変数を連結させた値を代入する変数 train を作成しなさい。
-        String train = town + line;
-        // ⑦ 変数plus, minus, multiply, remi, train をそれぞれ出力しなさい。
-        System.out.println(plus);
-        System.out.println(minus);
-        System.out.println(multiply);
-        System.out.println(remi);
-        System.out.println(train);
+
+        // ② 「name」の値が「USER_NAME」と等しく、「 pass 」の値が「USER_PASSWORD」と等しい場合。
+        //      定数を使用して「 ログイン成功です 」と出力してください。
+        if (USER_NAME = USER_PASSWORD) {
+            System.out.println = "ログイン成功です"
+        }
+
+        // ③ 「USER_RNAME」の値のみ等しい場合。
+       //     定数を使用して「 パスワードに誤りがあります。 」 と出力してください。
+
+
+
+
+
+
+        // ④ 「USER_PASSWORD」の値のみ等しい場合。
+       //定数を使用して「 名前に誤りがあります。 」と出力してください。
+
+
+
+
+        // ⑤ 「USER_NAME」も「USER_PASSWORD」の値も間違っていた場合。 
+       //定数を使用して「 入力情報に誤りがあります。 」と出力してください。
+
+
+
+       
     }
+
 }
